@@ -1,0 +1,92 @@
+/* =========================================
+   CHASQUI UI/UX
+   Sistema centralizado de variables
+   ========================================= */
+
+:root {
+    /* Colores institucionales */
+    --color-primary: #254697;
+    --color-primary-dark: #1B3572;
+    --color-primary-deep: #122B63;
+    --color-primary-soft: #DCE6FA;
+    --color-primary-tint: #EAF0FC;
+    --color-primary-muted: #627EB6;
+    --color-primary-text: #2D4888;
+    --color-accent: #E51E21;
+    --color-accent-dark: #C21A1D;
+
+    /* Colores neutros */
+    --color-white: #FFFFFF;
+    --color-black: #171717;
+    --color-text: #292929;
+    --color-text-muted: #666666;
+    --color-background: #FFFFFF;
+    --color-border: #D7DCE5;
+    --color-surface-gray: #D9D9D9;
+    --color-badge: #B3B3B3;
+    --color-band: #A4B7DB;
+    --color-photo-bg: #5875AD;
+
+    /* Tipografía institucional */
+    --font-family-base: "Nunito", system-ui, sans-serif;
+
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.75rem;
+
+    /* Escala fluida para títulos de sección */
+    --font-size-section-title: clamp(1.6rem, 1.2rem + 1.4vw, 2.5rem);
+
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
+    /* Espaciado */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --section-space: clamp(3rem, 2rem + 3.5vw, 5.5rem);
+
+    /* Bordes */
+    --border-width: 1px;
+    --radius-sm: 0.375rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+
+    /* Diseño adaptable
+       El contenedor está en rem: en monitores grandes el html aumenta
+       su tamaño de fuente (ver styles.css) y el contenedor crece con él. */
+    --container-max-width: 90rem;
+    --page-gutter: clamp(1rem, 2.5vw, 2.5rem);
+    --header-height: clamp(112px, 9vw, 160px);
+
+    /* Franja decorativa de formas (entre el menú y el hero, y sobre el footer) */
+    --pattern-height: clamp(1.25rem, 0.9rem + 0.7vw, 2.25rem);
+    --divider-height: calc(var(--pattern-height) + 0.5rem);
+
+    /* Sombras */
+    --shadow-logo: 0 4px 8px rgb(0 0 0 / 22%);
+    --shadow-navigation: 0 7px 6px rgb(0 0 0 / 25%);
+    --shadow-card: 0 4px 12px rgb(37 70 151 / 12%);
+    --shadow-card-hover: 0 12px 26px rgb(37 70 151 / 25%);
+
+    /* Movimiento */
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --reveal-duration: 750ms;
+
+    /* Capas */
+    --z-header: 100;
+    --z-progress: 200;
+    --z-skip: 300;
+}
+
+@media (max-width: 1100px) {
+    :root {
+        --header-height: 7rem;
+    }
+}
