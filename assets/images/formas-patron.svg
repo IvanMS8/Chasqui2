@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1868" height="156" viewBox="0 0 1868 156" role="img" aria-labelledby="title desc">
+  <title id="title">Secuencia de formas geométricas</title>
+  <desc id="desc">Doce formas geométricas en azul marino, rojo y gris muy claro, sobre fondo transparente.</desc>
+  <!-- Colores originales: azul marino #1F366B, rojo #E51E21, gris claro #F5F5F5. -->
+  <g id="formas-azules" fill="#1F366B">
+    <rect id="cuadrado-redondeado-azul-1" x="7" y="18" width="139" height="135" rx="40" />
+    <ellipse id="aro-azul-1" cx="388" cy="85.5" rx="69" ry="67.5" />
+    <rect id="cuadrado-redondeado-azul-2" x="629" y="18" width="139" height="135" rx="40" />
+    <ellipse id="aro-azul-2" cx="1010" cy="85.5" rx="69" ry="67.5" />
+    <rect id="cuadrado-redondeado-azul-3" x="1251" y="18" width="139" height="135" rx="40" />
+    <ellipse id="aro-azul-3" cx="1632" cy="85.5" rx="69" ry="67.5" />
+  </g>
+  <g id="formas-rojas" fill="#E51E21">
+    <ellipse id="circulo-rojo-1" cx="232.5" cy="85.5" rx="69.5" ry="67.5" />
+    <rect id="cuadrado-redondeado-rojo-1" x="474" y="18" width="139" height="135" rx="40" />
+    <ellipse id="circulo-rojo-2" cx="854.5" cy="85.5" rx="69.5" ry="67.5" />
+    <rect id="cuadrado-redondeado-rojo-2" x="1096" y="18" width="139" height="135" rx="40" />
+    <ellipse id="circulo-rojo-3" cx="1476.5" cy="85.5" rx="69.5" ry="67.5" />
+    <rect id="cuadrado-redondeado-rojo-3" x="1717" y="18" width="139" height="135" rx="40" />
+  </g>
+  <g id="centros-de-los-aros" fill="#F5F5F5">
+    <ellipse id="centro-aro-1" cx="388" cy="85.5" rx="51.5" ry="49.5" />
+    <ellipse id="centro-aro-2" cx="1010" cy="85.5" rx="51" ry="49.5" />
+    <ellipse id="centro-aro-3" cx="1632" cy="85.5" rx="51.5" ry="49.5" />
+  </g>
+</svg>
