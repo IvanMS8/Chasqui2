@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Programas | Centro de Comunicación Cultural Chasqui</title>
+  <meta name="description"
+    content="Conoce los programas de Chasqui: Desarrollo Local, Proyecto CPAN y Cultura de Paz, y cómo promueven derechos, participación y convivencia.">
+  <meta name="theme-color" content="#254697">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_BO">
+  <meta property="og:title" content="Programas | Chasqui">
+  <meta property="og:description"
+    content="Desarrollo Local, Proyecto CPAN y Cultura de Paz: los programas del Centro de Comunicación Cultural Chasqui.">
+
+  <!-- Activa los estilos de animación solo si hay JavaScript (sin JS el contenido siempre se ve) -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="programas.css">
+  <script src="programas.js" defer></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-container">
+
+      <a class="site-header__brand" href="index.html" aria-label="Chasqui - Ir al inicio">
+        <img class="site-header__logo" src="assets/images/logo-chasqui.png"
+          alt="Centro de Comunicación Cultural Chasqui" width="350" height="110">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú de navegación"
+        aria-controls="primary-navigation" aria-expanded="false">
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+      </button>
+
+      <nav class="site-header__navigation" id="primary-navigation" aria-label="Navegación principal">
+        <a class="site-header__link" href="index.html">Inicio</a>
+        <a class="site-header__link" href="quienes-somos.html">Quiénes somos</a>
+        <a class="site-header__link" href="programas.html" aria-current="page">Proyectos</a>
+        <a class="site-header__link" href="noticias.html">Noticias</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="pattern-divider" aria-hidden="true"></div>
+
+
+  <main id="contenido-principal">
+
+    <!-- OBJETIVO + ACCESOS A CADA PROGRAMA -->
+    <section class="program-intro section" aria-labelledby="program-objective">
+      <div class="container">
+
+        <h1 class="program-intro__objective" id="program-objective" data-reveal>
+          Nuestro objetivo es que <abbr title="Niñas, niños y adolescentes">NNA</abbr>, mujeres ejerzan sus
+          derechos y participen de manera activa en su municipio
+        </h1>
+
+        <!-- Cada enlace lleva directo a la sección del programa (por su id) -->
+        <nav class="program-tabs" aria-label="Ir a un programa" data-stagger>
+          <a class="program-tabs__link" href="#desarrollo-local">Desarrollo Local</a>
+          <a class="program-tabs__link" href="#proyecto-cpan">Proyecto CPAN</a>
+          <a class="program-tabs__link" href="#cultura-paz">Cultura de Paz</a>
+        </nav>
+
+      </div>
+    </section>
+
+    <!-- DESARROLLO LOCAL -->
+    <section class="program section" id="desarrollo-local" aria-labelledby="program-dl-title">
+      <div class="container program__grid">
+
+        <div class="program__info" data-reveal="left">
+          <h2 class="program__title" id="program-dl-title">¿Qué hace Desarrollo Local?</h2>
+          <p class="program__description">
+            Fortalece la participación de niñas y niños como actores sociales y agentes de cambio. Promovemos sus derechos, capacidades y voces en espacios de participación y toma de decisiones.
+          </p>
+
+          <ul class="program__list" data-stagger>
+            <li>Conformación y fortalecimiento de los Comités Municipales NNA.</li>
+            <li>Agenda Infantil.</li>
+            <li>Incidencia política.</li>
+            <li>Grupos de interés (teatro, comunicadores, cocina creativa, inglés, danza).</li>
+            <li>Capacitación a madres y padres de familia.</li>
+            <li>Capacitación a maestras y maestros.</li>
+            <li>Parte de la RED RIINA.</li>
+          </ul>
+        </div>
+
+        <article class="program-card" data-reveal="right">
+          <div class="program-card__media">
+            <img src="assets/images/logo-desarrollo-local.png" alt="Logotipo de Chasqui Desarrollo Local" width="300" height="300">
+          </div>
+          <div class="program-card__body">
+            <h3 class="program-card__title">Desarrollo Local</h3>
+            <p class="program-card__meta">Fundado en [año]</p>
+            <p class="program-card__tag">Parte de la Red RIINA</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROYECTO CPAN -->
+    <section class="program section program--tint" id="proyecto-cpan" aria-labelledby="program-cpan-title">
+      <div class="container program__grid">
+
+        <div class="program__info" data-reveal="left">
+          <h2 class="program__title" id="program-cpan-title">¿Qué hace CPAN?</h2>
+          <p class="program__description">
+            Promueve procesos socioeducativos, ambientales y comunitarios con enfoque de equidad y resiliencia. Impulsamos la participación para construir comunidades seguras, sostenibles y libres de violencia.
+          </p>
+
+          <ul class="program__list" data-stagger>
+            <li>Campañas de limpieza.</li>
+            <li>Campañas de reforestación.</li>
+            <li>Campañas de reciclaje.</li>
+            <li>Sensibilización en prevención de violencia.</li>
+            <li>Acciones educativas de cuidado del medio ambiente.</li>
+            <li>Emprendimientos verdes y sostenibles.</li>
+          </ul>
+        </div>
+
+        <article class="program-card" data-reveal="right">
+          <div class="program-card__media">
+            <img src="assets/images/logo-cpan.png" alt="Logotipo de CPAN, Convivencia Pacífica y Armónica con la Naturaleza" width="300" height="300">
+          </div>
+          <div class="program-card__body">
+            <h3 class="program-card__title">Proyecto CPAN</h3>
+            <p class="program-card__meta">Fundado en [año]</p>
+            <p class="program-card__tag">Convivencia pacífica y armónica con la naturaleza</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CULTURA DE PAZ -->
+    <section class="program section" id="cultura-paz" aria-labelledby="program-paz-title">
+      <div class="container program__grid">
+
+        <div class="program__info" data-reveal="left">
+          <h2 class="program__title" id="program-paz-title">¿Qué hace Cultura de Paz?</h2>
+          <p class="program__description">
+            Fortalecemos una cultura de paz y buen trato en comunidades educativas y familias. Promovemos la resolución pacífica de conflictos y la prevención de la violencia. Impulsamos la participación activa de niñas, niños, adolescentes y jóvenes.
+          </p>
+
+          <ul class="program__list" data-stagger>
+            <li>Talleres de formación de cultura de paz.</li>
+            <li>Talleres de cambio climático.</li>
+            <li>Gestión de riesgos.</li>
+            <li>Escuela de madres y padres de familia.</li>
+            <li>Formación de comunicadores de paz.</li>
+            <li>Mediadores/as, replicadores/as de paz.</li>
+          </ul>
+        </div>
+
+        <article class="program-card" data-reveal="right">
+          <div class="program-card__media">
+            <img src="assets/images/logo-cultural.png" alt="Ilustración del programa Cultura de Paz" width="300" height="300">
+          </div>
+          <div class="program-card__body">
+            <h3 class="program-card__title">Cultura de Paz</h3>
+            <p class="program-card__meta">Fundado en [año]</p>
+            <p class="program-card__tag">Buen trato y resolución pacífica de conflictos</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACTO Y VOLUNTARIADO -->
+    <section class="contact section" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact__container">
+
+        <div class="contact__info" data-reveal="left">
+          <h2 class="contact__title" id="contact-title">Escríbenos y sé parte de Chasqui</h2>
+          <p class="contact__description">
+            Cuéntanos qué te interesa: talleres, voluntariado o alianzas. Te responderemos lo antes posible.
+          </p>
+
+          <div class="contact__card">
+            <img src="assets/images/voluntarios-chasqui.png" alt="Voluntarios Chasqui" width="380" height="100"
+              loading="lazy">
+          </div>
+        </div>
+
+        <!-- Para enviar mensajes reales, coloca en "action" la URL de un servicio como Formspree o Web3Forms -->
+        <form class="contact__form" id="contact-form" action="#" method="POST" novalidate data-reveal="right">
+
+          <div class="form-group">
+            <label class="form-label" for="nombre">Nombre completo</label>
+            <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"
+              autocomplete="name" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="correo">Correo electrónico</label>
+            <input class="form-input" type="email" id="correo" name="correo" placeholder="Escribe tu correo"
+              autocomplete="email" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="whatsapp">Número de WhatsApp</label>
+            <input class="form-input" type="tel" id="whatsapp" name="whatsapp" placeholder="Escribe tu número"
+              autocomplete="tel" inputmode="tel" pattern="[0-9+()\s\-]{7,20}" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="mensaje">Mensaje</label>
+            <textarea class="form-textarea" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje"
+              required></textarea>
+          </div>
+
+          <!-- Campo trampa contra bots: las personas no lo ven -->
+          <div class="visually-hidden" aria-hidden="true">
+            <label for="website">No completar este campo</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button class="form-button" type="submit">Enviar mensaje</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <div class="pattern-divider" aria-hidden="true"></div>
+
+  <footer class="footer" id="contacto-footer" aria-label="Información institucional y de contacto">
+    <div class="footer__container" data-stagger>
+
+      <div class="footer__col footer__col--text">
+        <p class="footer__text">
+          Comunicación, cultura, educación, prevención y participación social al servicio de niñas, niños,
+          adolescentes, jóvenes y comunidades.
+        </p>
+      </div>
+
+      <div class="footer__col footer__col--figure">
+        <img src="assets/images/footer-figure.png" alt="Figura institucional de Chasqui" width="220" height="220"
+          loading="lazy">
+      </div>
+
+      <address class="footer__col footer__col--contact">
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text">
+            Zona Estrella de Belén, Calle 15 N°658, entre calle Ñ y Q, Ciudad de El Alto, Distrito 4.
+          </p>
+        </div>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text"><a href="tel:+59122883889">(591-2) 2883889</a></p>
+        </div>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text"><a href="tel:+59171996503">(591) 71996503</a></p>
+        </div>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text"><a href="mailto:cccchasqui.bolivia@gmail.com">cccchasqui.bolivia@gmail.com</a></p>
+        </div>
+
+      </address>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

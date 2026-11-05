@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chasqui | Centro de Comunicación Cultural</title>
+  <meta name="description"
+    content="Conoce el trabajo del Centro de Comunicación Cultural Chasqui, sus programas, proyectos y talleres.">
+  <meta name="theme-color" content="#254697">
+
+  <!-- Vista previa al compartir el enlace (agrega og:url y og:image con la URL final al publicar) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_BO">
+  <meta property="og:title" content="Chasqui | Centro de Comunicación Cultural">
+  <meta property="og:description"
+    content="Programas, proyectos y talleres del Centro de Comunicación Cultural Chasqui.">
+
+  <!-- Activa los estilos de animación solo si hay JavaScript (sin JS el contenido siempre se ve) -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- La imagen del hero se pide antes para que cargue más rápido -->
+  <link rel="preload" as="image" href="assets/images/hero-chasqui.jpg" fetchpriority="high">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
+
+  <header class="site-header" id="inicio">
+    <div class="header-container">
+
+      <a class="site-header__brand" href="#inicio" aria-label="Chasqui - Ir al inicio">
+        <img class="site-header__logo" src="assets/images/logo-chasqui.png"
+          alt="Centro de Comunicación Cultural Chasqui" width="350" height="110">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú de navegación"
+        aria-controls="primary-navigation" aria-expanded="false">
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+      </button>
+
+      <nav class="site-header__navigation" id="primary-navigation" aria-label="Navegación principal">
+        <a class="site-header__link" href="#inicio" aria-current="page">Inicio</a>
+        <a class="site-header__link" href="quienes-somos.html">Quiénes somos</a>
+        <a class="site-header__link" href="programas.html">Proyectos</a>
+        <a class="site-header__link" href="noticias.html">Noticias</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="pattern-divider" aria-hidden="true"></div>
+
+  <main id="contenido-principal">
+
+    <!-- HERO (slider de 4 imágenes) -->
+    <section class="hero" id="presentacion" aria-labelledby="hero-title">
+      <div class="hero__slide">
+
+        <!-- Imágenes de fondo: la que tiene "is-active" es la primera en mostrarse.
+             Cambia los nombres de archivo por los de tus 4 imágenes.
+             Opcional: style="--focus: 50% 20%" mueve el encuadre de esa imagen. -->
+        <img class="hero__background is-active" src="assets/images/hero-chasqui.jpg" alt="" width="1920"
+          height="1080" fetchpriority="high" decoding="async">
+        <img class="hero__background" src="assets/images/49.jpg" alt="" width="1920" height="1080"
+          loading="lazy" decoding="async">
+        <img class="hero__background" src="assets/images/51.jpg" alt="" width="1920" height="1080"
+          loading="lazy" decoding="async">
+        <img class="hero__background" src="assets/images/53.jpg" alt="" width="1920" height="1080"
+          loading="lazy" decoding="async">
+
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">
+            UNA INSTITUCIÓN CON PROPÓSITO. DERECHOS, CULTURA Y PARTICIPACIÓN.
+          </h1>
+        </div>
+
+        <div class="hero__logos" role="group" aria-label="Programas institucionales">
+
+          <a class="hero__logo hero__logo--development" href="#programas" aria-label="Conoce Desarrollo Local">
+            <img src="assets/images/logo-desarrollo-local.png" alt="Chasqui Desarrollo Local" width="300"
+              height="300" decoding="async">
+          </a>
+
+          <a class="hero__logo hero__logo--cpan" href="#programas" aria-label="Conoce CPAN">
+            <img src="assets/images/logo-cpan.png" alt="CPAN" width="200" height="200" decoding="async">
+          </a>
+
+          <a class="hero__logo hero__logo--cultural" href="#programas" aria-label="Conoce el programa cultural">
+            <img src="assets/images/logo-cultural.png" alt="Ilustración del programa cultural de Chasqui"
+              width="200" height="200" decoding="async">
+          </a>
+
+        </div>
+
+        <!-- Los controles (flechas, puntos y pausa) los crea js/main.js -->
+
+      </div>
+    </section>
+
+
+    <!-- ACCESOS RÁPIDOS -->
+    <section class="quick-access section" aria-labelledby="quick-access-title">
+      <div class="container">
+
+        <h2 class="quick-access__title" id="quick-access-title" data-reveal>
+          ¿Qué quieres hacer hoy?
+        </h2>
+
+        <div class="quick-access__grid" data-stagger>
+
+          <a class="quick-card" href="quienes-somos.html">
+            <span class="quick-card__description">Quiénes somos</span>
+            <span class="quick-card__title">Conocer la institución</span>
+          </a>
+
+          <a class="quick-card" href="#talleres">
+            <span class="quick-card__description">Programas y talleres</span>
+            <span class="quick-card__title">Participar</span>
+          </a>
+
+          <a class="quick-card" href="noticias.html">
+            <span class="quick-card__description">Noticias y proyectos</span>
+            <span class="quick-card__title">Informarme</span>
+          </a>
+
+          <a class="quick-card" href="colaborar.html">
+            <span class="quick-card__description">Tu aporte transforma realidades</span>
+            <span class="quick-card__title">Contactar y colaborar</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROGRAMAS -->
+    <section class="programs section" id="programas" aria-labelledby="programs-title">
+      <div class="container">
+
+        <h2 class="section-title" id="programs-title" data-reveal>Nuestros programas</h2>
+
+        <div class="programs__grid" data-stagger="zoom">
+
+          <article class="program-card">
+            <img class="program-card__background" src="assets/images/31.jpg" alt="" width="800" height="600"
+              loading="lazy">
+            <h3 class="program-card__title">Desarrollo Local</h3>
+            <a class="program-card__link" href="programas.html#desarrollo-local"
+              aria-label="Ver más sobre Desarrollo Local">Ver más</a>
+          </article>
+
+          <article class="program-card">
+            <img class="program-card__background" src="assets/images/41.jpg" alt="" width="800" height="600"
+              loading="lazy">
+            <h3 class="program-card__title">Proyecto CPAN</h3>
+            <a class="program-card__link" href="programas.html#proyecto-cpan"
+              aria-label="Ver más sobre Proyecto CPAN">Ver más</a>
+          </article>
+
+          <article class="program-card">
+            <img class="program-card__background" src="assets/images/47.jpg" alt="" width="800" height="600"
+              loading="lazy">
+            <h3 class="program-card__title">Cultura de Paz</h3>
+            <a class="program-card__link" href="programas.html#cultura-paz"
+              aria-label="Ver más sobre Cultura de Paz">Ver más</a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TALLERES -->
+    <section class="workshops section" id="talleres" aria-labelledby="workshops-title">
+      <div class="container">
+
+        <h2 class="section-title" id="workshops-title" data-reveal>Encuentra tu taller en un clic</h2>
+
+        <div class="workshops__carousel-wrapper" data-reveal>
+          <!-- main.js duplica estas tarjetas (marcadas como ocultas para lectores de pantalla) para el bucle infinito -->
+          <div class="workshops__carousel" id="workshops-carousel" tabindex="0" role="region"
+            aria-label="Talleres disponibles">
+
+            <article class="workshop-card">
+              <div class="workshop-card__media">
+                <img src="assets/images/taller-cocina.jpg" alt="Participantes del taller de cocina creativa"
+                  width="800" height="500" loading="lazy">
+              </div>
+              <div class="workshop-card__body">
+                <h3 class="workshop-card__title">Taller De Cocina Creativa</h3>
+                <p class="workshop-card__location-label">Lugar: Chasqui</p>
+                <p class="workshop-card__address">
+                  Zona Estrella de Belén, Calle 15 N°658,<br>
+                  entre calle Ñ y Q, Ciudad de El Alto, Distrito 4
+                </p>
+              </div>
+            </article>
+
+            <article class="workshop-card">
+              <div class="workshop-card__media">
+                <img src="assets/images/taller-comunicacion.jpg" alt="Participantes del taller de comunicación"
+                  width="800" height="500" loading="lazy">
+              </div>
+              <div class="workshop-card__body">
+                <h3 class="workshop-card__title">Taller De Comunicación</h3>
+                <p class="workshop-card__location-label">Lugar: Chasqui</p>
+                <p class="workshop-card__address">
+                  Zona Estrella de Belén, Calle 15 N°658,<br>
+                  entre calle Ñ y Q, Ciudad de El Alto, Distrito 4
+                </p>
+              </div>
+            </article>
+
+            <article class="workshop-card">
+              <div class="workshop-card__media">
+                <img src="assets/images/taller-teatro.jpg" alt="Participantes del taller de teatro" width="800"
+                  height="500" loading="lazy">
+              </div>
+              <div class="workshop-card__body">
+                <h3 class="workshop-card__title">Taller De Teatro</h3>
+                <p class="workshop-card__location-label">Lugar: Chasqui</p>
+                <p class="workshop-card__address">
+                  Zona Estrella de Belén, Calle 15 N°658,<br>
+                  entre calle Ñ y Q, Ciudad de El Alto, Distrito 4
+                </p>
+              </div>
+            </article>
+
+            <article class="workshop-card">
+              <div class="workshop-card__media">
+                <img src="assets/images/chasqui-elencooficial.png" alt="Elenco oficial de danza de Chasqui"
+                  width="800" height="500" loading="lazy">
+              </div>
+              <div class="workshop-card__body">
+                <h3 class="workshop-card__title">Taller De Danza</h3>
+                <p class="workshop-card__location-label">Lugar: Chasqui</p>
+                <p class="workshop-card__address">
+                  Zona Estrella de Belén, Calle 15 N°658,<br>
+                  entre calle Ñ y Q, Ciudad de El Alto, Distrito 4
+                </p>
+              </div>
+            </article>
+
+            <article class="workshop-card">
+              <div class="workshop-card__media">
+                <img src="assets/images/taller-voluntarios.jpg" alt="Voluntarios de Chasqui" width="800"
+                  height="500" loading="lazy">
+              </div>
+              <div class="workshop-card__body">
+                <h3 class="workshop-card__title">Voluntarios Chasqui</h3>
+                <p class="workshop-card__location-label">Lugar: Chasqui</p>
+                <p class="workshop-card__address">
+                  Zona Estrella de Belén, Calle 15 N°658,<br>
+                  entre calle Ñ y Q, Ciudad de El Alto, Distrito 4
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- INFORMACIÓN QUE TRANSFORMA -->
+    <section class="transform section" id="informacion" aria-labelledby="transform-title">
+      <div class="container">
+
+        <h2 class="section-title" id="transform-title" data-reveal>Información que transforma</h2>
+
+        <div class="transform__grid-top" data-stagger>
+          <article class="transform-card">
+            <div class="transform-card__media">
+              <img src="assets/images/noticias-recientes.png" alt="Noticias y proyectos recientes" width="800"
+                height="500" loading="lazy">
+            </div>
+            <div class="transform-card__body">
+              <h3 class="transform-card__title">Noticias y proyectos recientes</h3>
+              <a class="transform-card__link" href="noticias.html"
+                aria-label="Ver más sobre noticias y proyectos recientes">Ver más</a>
+            </div>
+          </article>
+
+          <article class="transform-card">
+            <div class="transform-card__media">
+              <img src="assets/images/biblioteca-chasqui.png" alt="Biblioteca Chasqui" width="800" height="500"
+                loading="lazy">
+            </div>
+            <div class="transform-card__body">
+              <h3 class="transform-card__title">Biblioteca Chasqui</h3>
+              <a class="transform-card__link" href="noticias.html#libro1"
+                aria-label="Ver más sobre la Biblioteca Chasqui">Ver más</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- El número final está en el HTML; main.js lo anima desde 0 -->
+        <div class="transform__grid-stats" data-stagger="zoom">
+
+          <div class="stat-card">
+            <span class="stat-card__number" data-target="121817">121.817</span>
+            <p class="stat-card__label">Personas alcanzadas</p>
+            <p class="stat-card__text">
+              Procesos educativos, culturales, comunicacionales y comunitarios desarrollados por Chasqui
+            </p>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-card__number" data-target="45">45</span>
+            <p class="stat-card__label">Proyectos realizados</p>
+            <p class="stat-card__text">
+              Iniciativas ejecutadas junto a comunidades, organizaciones, niñas, niños, adolescentes y familias.
+            </p>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-card__number" data-target="20">20</span>
+            <p class="stat-card__label">Convenios firmados</p>
+            <p class="stat-card__text">
+              Alianzas institucionales que fortalecen el trabajo social y comunitario.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section class="contact section" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact__container">
+
+        <div class="contact__info" data-reveal="left">
+          <h2 class="contact__title" id="contact-title">Escríbenos y sé parte de Chasqui</h2>
+          <p class="contact__description">
+            Cuéntanos qué te interesa:<br>
+            talleres, voluntariado o alianzas. Te responderemos lo antes posible.
+          </p>
+
+          <div class="contact__card">
+            <img src="assets/images/voluntarios-chasqui.png" alt="Voluntarios Chasqui" width="380" height="100"
+              loading="lazy">
+          </div>
+        </div>
+
+        <!-- Para enviar mensajes reales, coloca en "action" la URL de un servicio como Formspree o Web3Forms -->
+        <form class="contact__form" id="contact-form" action="#" method="POST" novalidate data-reveal="right">
+
+          <div class="form-group">
+            <label class="form-label" for="nombre">Nombre completo</label>
+            <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"
+              autocomplete="name" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="correo">Correo electrónico</label>
+            <input class="form-input" type="email" id="correo" name="correo" placeholder="Escribe tu correo"
+              autocomplete="email" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="whatsapp">Número de WhatsApp</label>
+            <input class="form-input" type="tel" id="whatsapp" name="whatsapp" placeholder="Escribe tu número"
+              autocomplete="tel" inputmode="tel" pattern="[0-9+()\s\-]{7,20}" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="mensaje">Mensaje</label>
+            <textarea class="form-textarea" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje"
+              required></textarea>
+          </div>
+
+          <!-- Campo trampa contra bots: las personas no lo ven -->
+          <div class="visually-hidden" aria-hidden="true">
+            <label for="website">No completar este campo</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button class="form-button" type="submit">Enviar mensaje</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+
+        </form>
+
+      </div>
+    </section>
+
+
+    <!-- AUSPICIADORES -->
+    <section class="sponsors" id="auspiciadores" aria-label="Auspiciadores y patrocinadores">
+      <div class="sponsors__container container" data-reveal>
+        <!-- main.js duplica estos logos para el bucle infinito -->
+        <div class="sponsors__track" id="sponsors-track" data-marquee>
+
+          <div class="sponsor-item">
+            <img src="assets/images/compa.jpg" alt="COMPA" width="240" height="120" loading="lazy">
+          </div>
+          <div class="sponsor-item">
+            <img src="assets/images/defensor-del-pueblo.png" alt="Defensor del Pueblo" width="240" height="120"
+              loading="lazy">
+          </div>
+          <div class="sponsor-item">
+            <img src="assets/images/eirene.png" alt="Eirene" width="240" height="120" loading="lazy">
+          </div>
+          <div class="sponsor-item">
+            <img src="assets/images/embajada-de-alemania-en-bolivia.jpg" alt="Embajada de Alemania en Bolivia"
+              width="240" height="120" loading="lazy">
+          </div>
+          <div class="sponsor-item">
+            <img src="assets/images/emblema-policia-boliviana.jpg" alt="Policía Boliviana" width="240"
+              height="120" loading="lazy">
+          </div>
+          <div class="sponsor-item">
+            <img src="assets/images/svalorna.webp" alt="Svalorna" width="240" height="120" loading="lazy">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <div class="pattern-divider" aria-hidden="true"></div>
+
+  <footer class="footer" id="contacto-footer" aria-label="Información institucional y de contacto">
+    <div class="footer__container" data-stagger>
+
+      <div class="footer__col footer__col--text">
+        <p class="footer__text">
+          Comunicación, cultura, educación, prevención y participación social al servicio de niñas, niños,
+          adolescentes, jóvenes y comunidades.
+        </p>
+      </div>
+
+      <div class="footer__col footer__col--figure">
+        <img src="assets/images/footer-figure.png" alt="Figura institucional de Chasqui" width="220" height="220"
+          loading="lazy">
+      </div>
+
+      <address class="footer__col footer__col--contact">
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text">
+            Zona Estrella de Belén, Calle 15 N°658, entre calle Ñ y Q, Ciudad de El Alto, Distrito 4.
+          </p>
+        </div>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text"><a href="tel:+59122883889">(591-2) 2883889</a></p>
+        </div>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text"><a href="tel:+59171996503">(591) 71996503</a></p>
+        </div>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text"><a href="mailto:cccchasqui.bolivia@gmail.com">cccchasqui.bolivia@gmail.com</a></p>
+        </div>
+
+      </address>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

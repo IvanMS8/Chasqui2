@@ -1,0 +1,483 @@
+/* =========================================
+   CHASQUI UI/UX
+   Estilos exclusivos: Quiénes somos
+   (base, header, footer y animaciones vienen de styles.css)
+   ========================================= */
+
+/* =========================================
+   1. Etiquetas ("píldoras")
+   ========================================= */
+
+.pill-badge {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 0.45rem 1.4rem;
+    border: 1.5px solid var(--color-primary-muted);
+    border-radius: var(--radius-md);
+
+    background-color: var(--color-badge);
+    color: var(--color-primary);
+
+    font-weight: var(--font-weight-black);
+    line-height: 1.2;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+}
+
+.pill-badge--main {
+    font-size: clamp(1.3rem, 1rem + 1vw, 1.8rem);
+}
+
+.pill-badge--section {
+    padding: 0.55rem 2rem;
+    border-radius: 14px;
+    font-size: clamp(1.4rem, 1rem + 1.3vw, 2.1rem);
+}
+
+.pill-badge--sub {
+    align-self: flex-start;
+    padding: 0.35rem 1.1rem;
+    font-size: clamp(1rem, 0.9rem + 0.45vw, 1.35rem);
+}
+
+
+/* =========================================
+   2. Somos Chasqui · Misión · Visión
+   ========================================= */
+
+.about-us__container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) minmax(0, 1.1fr);
+    gap: clamp(1.8rem, 3vw, 4rem);
+    align-items: start;
+}
+
+.about-us__col--intro,
+.about-us__col--mission-vision {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us__col--intro {
+    gap: 1.5rem;
+}
+
+.about-us__col--mission-vision {
+    gap: 1.4rem;
+}
+
+.about-us__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    color: var(--color-primary-text);
+    font-size: clamp(0.95rem, 0.85rem + 0.4vw, 1.2rem);
+    line-height: 1.55;
+}
+
+.about-us__strong {
+    font-size: inherit;
+    font-weight: var(--font-weight-bold);
+}
+
+.sub-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.sub-section p {
+    color: var(--color-primary-text);
+    font-size: clamp(0.95rem, 0.85rem + 0.35vw, 1.15rem);
+    line-height: 1.55;
+}
+
+.about-us__vision-title {
+    margin-top: 1.5rem;
+}
+
+/* Acordeón "Nuestra historia" */
+
+.history-accordion {
+    margin-top: 0.5rem;
+}
+
+.accordion-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    width: 100%;
+    max-width: 20rem;
+    padding: 0.45rem 1.4rem;
+
+    border: 1.5px solid var(--color-primary-muted);
+    border-radius: var(--radius-md);
+    background-color: var(--color-badge);
+    color: var(--color-primary);
+    text-align: left;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+
+    transition: transform 150ms ease, background-color 150ms ease;
+}
+
+@media (hover: hover) {
+    .accordion-trigger:hover {
+        background-color: #A3A3A3;
+        transform: translateY(-2px);
+    }
+}
+
+.accordion-trigger__title {
+    display: block;
+    font-size: clamp(1.2rem, 1rem + 0.7vw, 1.6rem);
+    font-weight: var(--font-weight-black);
+    line-height: 1.2;
+}
+
+.accordion-trigger__subtitle {
+    display: block;
+    color: #3B5899;
+    font-size: clamp(0.85rem, 0.8rem + 0.25vw, 1.1rem);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Flecha que gira al abrir */
+.accordion-trigger__chevron {
+    flex: 0 0 auto;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-right: 3px solid currentColor;
+    border-bottom: 3px solid currentColor;
+    rotate: 45deg;
+    translate: 0 -2px;
+    transition: rotate 300ms var(--ease-out), translate 300ms var(--ease-out);
+}
+
+.accordion-trigger[aria-expanded="true"] .accordion-trigger__chevron {
+    rotate: 225deg;
+    translate: 0 2px;
+}
+
+/* Panel: se despliega suavemente. Sin JS queda siempre visible. */
+.accordion-panel__inner {
+    padding: 1rem 0.5rem 0.5rem;
+    color: var(--color-primary-text);
+    font-size: clamp(0.95rem, 0.85rem + 0.3vw, 1.1rem);
+    line-height: 1.55;
+}
+
+.js .accordion-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    visibility: hidden;
+    transition:
+        grid-template-rows 400ms var(--ease-out),
+        visibility 0s linear 400ms;
+}
+
+.js .accordion-panel.is-open {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+.js .accordion-panel__inner {
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* Tarjeta visual */
+
+.about-us__col--media {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.feature-card {
+    position: relative;
+
+    width: 100%;
+    max-width: 28.75rem;
+    height: clamp(24rem, 34vw, 32.5rem);
+
+    border: 2px solid var(--color-primary-muted);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgb(37 70 151 / 20%);
+}
+
+.feature-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale 900ms var(--ease-out);
+}
+
+@media (hover: hover) {
+    .feature-card:hover img {
+        scale: 1.05;
+    }
+}
+
+.feature-card__overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    padding: 2.2rem 1.8rem;
+    background: linear-gradient(180deg, rgb(0 0 0 / 10%) 0%, rgb(0 0 0 / 70%) 100%);
+    text-align: center;
+}
+
+.feature-card__text {
+    color: var(--color-white);
+    font-size: clamp(1.8rem, 1.2rem + 1.6vw, 2.8rem);
+    font-weight: var(--font-weight-black);
+    line-height: 1.15;
+    text-shadow: 0 3px 8px rgb(0 0 0 / 70%);
+}
+
+.feature-card__text span {
+    display: block;
+    font-size: clamp(2.2rem, 1.5rem + 2vw, 3.4rem);
+}
+
+/* Tabletas: la tarjeta pasa debajo, centrada */
+@media (max-width: 1200px) {
+    .about-us__container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-us__col--media {
+        grid-column: 1 / -1;
+        justify-content: center;
+    }
+
+    .feature-card {
+        max-width: 40rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    .about-us__container {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        height: clamp(20rem, 90vw, 26rem);
+    }
+}
+
+
+/* =========================================
+   3. Galería de historia (marquesina infinita)
+   ========================================= */
+
+.history-gallery {
+    padding: var(--section-space) 0;
+    overflow: hidden;
+    background-color: var(--color-band);
+}
+
+.history-gallery__viewport {
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+
+/* El padding-right iguala el espacio entre fotos: así -50% coincide con
+   el largo exacto de un grupo y el bucle no tiene saltos. */
+.history-gallery__track {
+    --gap: clamp(1.5rem, 3vw, 3rem);
+
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    width: max-content;
+    padding: 0.75rem var(--gap) 1.25rem 0;
+}
+
+.history-gallery__track.is-animated {
+    animation: marquee var(--marquee-duration, 40s) linear infinite;
+}
+
+.history-gallery__viewport:hover .history-gallery__track {
+    animation-play-state: paused;
+}
+
+.gallery-card {
+    flex: 0 0 clamp(17.5rem, 28vw, 24rem);
+    height: clamp(15rem, 24vw, 20rem);
+
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: var(--color-white);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 15%);
+
+    transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (hover: hover) {
+    .gallery-card:hover {
+        transform: scale(1.04);
+        box-shadow: 0 14px 28px rgb(0 0 0 / 22%);
+    }
+}
+
+/* Sin animación: las fotos se muestran en cuadrícula centrada */
+@media (prefers-reduced-motion: reduce) {
+    .history-gallery__viewport {
+        mask-image: none;
+    }
+
+    .history-gallery__track {
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.75rem var(--page-gutter) 1.25rem;
+    }
+}
+
+
+/* =========================================
+   4. Equipo
+   ========================================= */
+
+.team-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(2rem, 4vw, 3.5rem);
+}
+
+.team-section__main-title {
+    padding: 0.6rem 2.5rem;
+
+    border: 2px solid var(--color-primary-muted);
+    border-radius: var(--radius-md);
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    box-shadow: 0 4px 10px rgb(0 0 0 / 5%);
+
+    font-size: clamp(1.4rem, 1rem + 1.3vw, 2.3rem);
+    font-weight: var(--font-weight-black);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.team-category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Una banda azul por categoría; las tarjetas se acomodan solas:
+   de a 2 por fila y la última centrada si queda sola. */
+.team-block {
+    width: 100%;
+    margin: 0;
+    padding: clamp(2rem, 3.5vw, 3.5rem) clamp(1.5rem, 4vw, 5rem);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(2rem, 4vw, 4rem) clamp(2rem, 5vw, 6rem);
+
+    list-style: none;
+    background-color: var(--color-band);
+}
+
+.team-card {
+    flex: 0 1 min(100%, 26rem);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-card__photo {
+    width: 100%;
+    height: clamp(16.25rem, 25vw, 21.25rem);
+
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: var(--color-photo-bg);
+    box-shadow: 0 6px 16px rgb(0 0 0 / 15%);
+}
+
+.team-card__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: scale 700ms var(--ease-out);
+}
+
+/* Caja de texto que se superpone a la foto */
+.team-card__info {
+    position: relative;
+    z-index: 2;
+
+    width: 90%;
+    margin-top: -1.8rem;
+    padding: 0.75rem 1rem;
+
+    border: 1.5px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    background-color: var(--color-surface-gray);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+    text-align: center;
+}
+
+.team-card__name {
+    color: var(--color-primary);
+    font-size: clamp(1rem, 0.9rem + 0.35vw, 1.25rem);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.25;
+}
+
+.team-card__role {
+    margin-top: 0.2rem;
+    color: var(--color-primary);
+    font-size: clamp(1rem, 0.9rem + 0.4vw, 1.3rem);
+    font-weight: var(--font-weight-black);
+    line-height: 1.2;
+}
+
+@media (hover: hover) {
+    .team-card {
+        transition: transform 250ms ease;
+    }
+
+    .team-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .team-card:hover .team-card__photo img {
+        scale: 1.06;
+    }
+}
+
+@media (max-width: 850px) {
+    .team-block {
+        padding: 2rem 1.5rem;
+    }
+
+    .team-card__info {
+        width: 95%;
+    }
+}

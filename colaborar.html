@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Colaborar | Centro de Comunicación Cultural Chasqui</title>
+  <meta name="description"
+    content="Conoce los proyectos de Chasqui y descubre cómo colaborar: escanea el código QR o escríbenos para ser parte del cambio.">
+  <meta name="theme-color" content="#254697">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_BO">
+  <meta property="og:title" content="Colaborar | Chasqui">
+  <meta property="og:description"
+    content="Proyectos de Chasqui y formas de colaborar con niñas, niños, adolescentes, jóvenes y comunidades.">
+
+  <!-- Activa los estilos de animación solo si hay JavaScript (sin JS el contenido siempre se ve) -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="colaborar.css">
+  <script src="colaborar.js" defer></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-container">
+
+      <a class="site-header__brand" href="index.html" aria-label="Chasqui - Ir al inicio">
+        <img class="site-header__logo" src="assets/images/logo-chasqui.png"
+          alt="Centro de Comunicación Cultural Chasqui" width="350" height="110">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú de navegación"
+        aria-controls="primary-navigation" aria-expanded="false">
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+      </button>
+
+      <nav class="site-header__navigation" id="primary-navigation" aria-label="Navegación principal">
+        <a class="site-header__link" href="index.html">Inicio</a>
+        <a class="site-header__link" href="quienes-somos.html">Quiénes somos</a>
+        <a class="site-header__link" href="programas.html">Proyectos</a>
+        <a class="site-header__link" href="noticias.html">Noticias</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="pattern-divider" aria-hidden="true"></div>
+
+
+  <main id="contenido-principal">
+
+    <h1 class="visually-hidden">Colabora con Chasqui</h1>
+
+    <!-- PROYECTO 1 -->
+    <section class="project section" aria-labelledby="project-1-title">
+      <div class="container">
+
+        <h2 class="section-title" id="project-1-title" data-reveal>Mujeres al volante</h2>
+
+        <div class="project__grid">
+          <div class="project__text" data-reveal="left">
+            <p>
+              Cada logro que alcanzamos refleja la fuerza de una comunidad que sueña y trabaja unida.
+              Detrás de cada sonrisa y cada historia de cambio está la solidaridad de quienes creen en un
+              futuro más justo.
+            </p>
+          </div>
+
+          <!-- Para un video propio cambia el <img> por:
+               <video controls preload="metadata" poster="assets/images/colaborar-proyecto-1.jpg">
+                 <source src="assets/videos/mujeres-al-volante.mp4" type="video/mp4">
+               </video>
+               Para YouTube usa un <iframe> con title="..." y loading="lazy". -->
+          <figure class="project__media" data-reveal="right">
+            <img src="assets/images/colaborar-proyecto-1.jpg"
+              alt="Proyecto Mujeres al volante de Chasqui" width="800" height="500" loading="lazy">
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROYECTO 2 (texto de ejemplo: reemplázalo por el definitivo) -->
+    <section class="project section" aria-labelledby="project-2-title">
+      <div class="container">
+
+        <h2 class="section-title" id="project-2-title" data-reveal>Juntos transformamos realidades</h2>
+
+        <div class="project__grid">
+          <div class="project__text" data-reveal="left">
+            <p>
+              Cuando las familias, las comunidades y las instituciones caminan juntas, los cambios se
+              sostienen en el tiempo. Cada aporte y cada alianza fortalece los procesos educativos,
+              culturales y comunitarios que impulsamos con niñas, niños, adolescentes y jóvenes.
+            </p>
+          </div>
+
+          <figure class="project__media" data-reveal="right">
+            <img src="assets/images/colaborar-proyecto-2.jpg"
+              alt="Proyecto Juntos transformamos realidades de Chasqui" width="800" height="500" loading="lazy">
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- FRASE DESTACADA -->
+    <section class="quote-band" aria-label="Mensaje de Chasqui">
+      <div class="container">
+        <p class="quote-band__text" data-reveal>
+          “Cada logro que alcanzamos refleja la fuerza de una comunidad que sueña y trabaja unida. Detrás de cada
+          sonrisa y cada historia de cambio está la solidaridad de quienes creen en un futuro más justo.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- INVITACIÓN + CÓDIGO QR -->
+    <section class="invite section" aria-labelledby="invite-text">
+      <div class="container invite__container">
+
+        <p class="invite__text" id="invite-text" data-reveal="left">
+          Hoy te invitamos a seguir caminando junto a nosotros, porque juntos podemos mantener viva la
+          esperanza y multiplicar los resultados que transformen vidas.”
+        </p>
+
+        <figure class="qr-card" data-reveal="zoom">
+          <img class="qr-card__image" src="assets/images/qr-colaborar.png"
+            alt="Código QR para colaborar con Chasqui" width="400" height="400" loading="lazy">
+          <figcaption class="qr-card__caption">Escanea el código para colaborar</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section class="contact section" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact__container">
+
+        <div class="contact__info" data-reveal="left">
+          <h2 class="contact__title" id="contact-title">Escríbenos y sé parte de Chasqui</h2>
+          <p class="contact__description">
+            Cuéntanos qué te interesa:<br>
+            talleres, voluntariado o alianzas. Te responderemos lo antes posible.
+          </p>
+        </div>
+
+        <!-- Para enviar mensajes reales, coloca en "action" la URL de un servicio como Formspree o Web3Forms -->
+        <form class="contact__form" id="contact-form" action="#" method="POST" novalidate data-reveal="right">
+
+          <div class="form-group">
+            <label class="form-label" for="nombre">Nombre completo</label>
+            <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"
+              autocomplete="name" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="correo">Correo electrónico</label>
+            <input class="form-input" type="email" id="correo" name="correo" placeholder="Escribe tu correo"
+              autocomplete="email" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="whatsapp">Número de WhatsApp</label>
+            <input class="form-input" type="tel" id="whatsapp" name="whatsapp" placeholder="Escribe tu número"
+              autocomplete="tel" inputmode="tel" pattern="[0-9+()\s\-]{7,20}" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="mensaje">Mensaje</label>
+            <textarea class="form-textarea" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje"
+              required></textarea>
+          </div>
+
+          <!-- Campo trampa contra bots: las personas no lo ven -->
+          <div class="visually-hidden" aria-hidden="true">
+            <label for="website">No completar este campo</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button class="form-button" type="submit">Enviar mensaje</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <div class="pattern-divider" aria-hidden="true"></div>
+
+  <footer class="footer" id="contacto-footer" aria-label="Información institucional y de contacto">
+    <div class="footer__container" data-stagger>
+
+      <div class="footer__col footer__col--text">
+        <p class="footer__text">
+          Comunicación, cultura, educación, prevención y participación social al servicio de niñas, niños,
+          adolescentes, jóvenes y comunidades.
+        </p>
+      </div>
+
+      <div class="footer__col footer__col--figure">
+        <img src="assets/images/footer-figure.png" alt="Figura institucional de Chasqui" width="220" height="220"
+          loading="lazy">
+      </div>
+
+      <address class="footer__col footer__col--contact">
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text">
+            Zona Estrella de Belén, Calle 15 N°658, entre calle Ñ y Q, Ciudad de El Alto, Distrito 4.
+          </p>
+        </div>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text"><a href="tel:+59122883889">(591-2) 2883889</a></p>
+        </div>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text"><a href="tel:+59171996503">(591) 71996503</a></p>
+        </div>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text"><a href="mailto:cccchasqui.bolivia@gmail.com">cccchasqui.bolivia@gmail.com</a></p>
+        </div>
+
+      </address>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

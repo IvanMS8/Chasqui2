@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Quiénes somos | Centro de Comunicación Cultural Chasqui</title>
+  <meta name="description"
+    content="Conoce la historia, la misión, la visión y el equipo del Centro de Comunicación Cultural Chasqui, fundado en 1990 en El Alto, Bolivia.">
+  <meta name="theme-color" content="#254697">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_BO">
+  <meta property="og:title" content="Quiénes somos | Chasqui">
+  <meta property="og:description"
+    content="Historia, misión, visión y equipo del Centro de Comunicación Cultural Chasqui.">
+
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Estilos compartidos + estilos propios de esta página -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="quienes-somos.css">
+
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-container">
+
+      <a class="site-header__brand" href="index.html" aria-label="Chasqui - Ir al inicio">
+        <img class="site-header__logo" src="assets/images/logo-chasqui.png"
+          alt="Centro de Comunicación Cultural Chasqui" width="350" height="110">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú de navegación" aria-controls="primary-navigation"
+        aria-expanded="false">
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+      </button>
+
+      <nav class="site-header__navigation" id="primary-navigation" aria-label="Navegación principal">
+        <a class="site-header__link" href="index.html">Inicio</a>
+        <a class="site-header__link" href="quienes-somos.html" aria-current="page">Quiénes somos</a>
+        <a class="site-header__link" href="programas.html">Proyectos</a>
+        <a class="site-header__link" href="noticias.html">Noticias</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="pattern-divider" aria-hidden="true"></div>
+
+  <main id="contenido-principal">
+
+    <!-- SOMOS CHASQUI · MISIÓN · VISIÓN -->
+    <section class="about-us section" id="quienes-somos" aria-labelledby="about-title">
+      <div class="container about-us__container">
+
+        <!-- Columna 1: presentación e historia -->
+        <div class="about-us__col about-us__col--intro" data-stagger>
+
+          <h1 class="pill-badge pill-badge--main" id="about-title">Somos Chasqui</h1>
+
+          <div class="about-us__text-block">
+            <p class="about-us__strong">Fundada en 1990</p>
+            <h2 class="about-us__strong">Nuestra misión</h2>
+            <p>
+              La misión institucional de Chasqui se orienta al fortalecimiento de las personas,
+              la institución y el contexto social donde desarrolla su trabajo comunitario.
+            </p>
+          </div>
+
+          <div class="history-accordion">
+            <button class="accordion-trigger" type="button" id="history-toggle" data-accordion aria-expanded="false"
+              aria-controls="history-content">
+              <span class="accordion-trigger__text">
+                <span class="accordion-trigger__title">Nuestra historia</span>
+                <span class="accordion-trigger__subtitle">Fundación Chasqui</span>
+              </span>
+              <span class="accordion-trigger__chevron" aria-hidden="true"></span>
+            </button>
+
+            <div class="accordion-panel" id="history-content" role="region" aria-labelledby="history-toggle">
+              <div class="accordion-panel__inner">
+                <p>
+                  1988
+                  Fundación de Chasqui Un grupo de jóvenes estudiantes de la UMSA funda el Centro de Comunicación
+                  Cultural Chasqui con el propósito de apoyar la superación académica y personal de estudiantes alteños.
+                  1990
+                  Primeras actividades
+                  organizadas Se desarrollan talleres, seminarios, festividades, encuentros juveniles y cursos de
+                  orientación vocacional, fortaleciendo el trabajo con jóvenes y comunidades de El Alto Norte.
+                  1992
+                  Construcción de un espacio propio Chasqui adquiere terrenos en la zona Estrellas de Belén, iniciando
+                  la construcción de sus primeros ambientes.con esfuerzo propio y trabajo. directo de sus miembros.
+                  1999
+                  Autosostenimiento institucional
+                  La institución se fortalece con recursos propios, actividades comunitarias y el compromiso voluntario
+                  de sus miembros activos.
+                  (2003)
+                  Nueva etapa de proyectos
+                  Se abre una etapa importante con el apoyo de organizaciones cooperantes, ampliando el trabajo
+                  educativo, social, cultural y comunitario.
+                  2018
+                  Memoria institucional de
+                  30 años
+                  Se sistematiza la historia institucional mediante una memoria que recoge testimonios, experiencias,
+                  proyectos, aprendizajes y vivencias de Chasqui.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Columna 2: misión y visión -->
+        <div class="about-us__col about-us__col--mission-vision" data-stagger>
+
+          <h2 class="pill-badge pill-badge--section">Misión</h2>
+
+          <div class="sub-section">
+            <h3 class="pill-badge pill-badge--sub">Centrada en los actores</h3>
+            <p>
+              Niñas, niños, adolescentes, jóvenes y sus familias son actores propositivos en la
+              construcción de sus proyectos de vida, valorando su identidad colectiva, sus saberes
+              culturales y la defensa de sus derechos.
+            </p>
+          </div>
+
+          <div class="sub-section">
+            <h3 class="pill-badge pill-badge--sub">Centrada en la institución</h3>
+            <p>
+              El Centro de Comunicación Cultural Chasqui está fortalecido, estructurado, organizado y
+              sólido, con liderazgo de su personal comprometido, identidad cultural y capacidad
+              profesional en gestión administrativa sostenible de proyectos.
+            </p>
+          </div>
+
+          <div class="sub-section">
+            <h3 class="pill-badge pill-badge--sub">Centrada en el contexto</h3>
+            <p>
+              El Departamento de La Paz con justicia social, democracia plena e identidad cultural,
+              orientado al bienestar común y al vivir bien con el mundo que nos rodea.
+            </p>
+          </div>
+
+          <h2 class="pill-badge pill-badge--section about-us__vision-title">Visión</h2>
+
+          <div class="sub-section">
+            <p>
+              Fortalecer la participación protagónica con reconocimiento social, generando liderazgos
+              en las organizaciones locales del Departamento de La Paz rural y urbano, restableciendo
+              valores culturales y la formación integral por el ejercicio de derechos a la educación
+              formal e inclusiva, salud integral, medioambiente sano, equidad de género y cultura de paz,
+              con niños, niñas, adolescentes, jóvenes y sus familias, para el vivir bien.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Columna 3: tarjeta visual -->
+        <div class="about-us__col about-us__col--media" data-reveal="right">
+          <figure class="feature-card">
+            <img src="assets/images/28.jpg" alt="Niños y educadores de Chasqui" width="460" height="520" loading="lazy">
+            <figcaption class="feature-card__overlay">
+              <p class="feature-card__text">
+                Más allá de<br>
+                una palabra:<br>
+                <span>“tíos”</span>
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- GALERÍA DE HISTORIA (marquesina infinita) -->
+    <section class="history-gallery" aria-label="Galería de fotografías de la historia de Chasqui">
+      <div class="history-gallery__viewport" data-reveal>
+        <!-- main.js duplica estas fotos para el bucle infinito -->
+        <div class="history-gallery__track" data-marquee data-marquee-speed="50">
+          <div class="gallery-card"><img src="assets/images/4.jpg" alt="Fotografía del archivo de Chasqui (1 de 6)"
+              width="380" height="320" loading="lazy"></div>
+          <div class="gallery-card"><img src="assets/images/30.jpg" alt="Fotografía del archivo de Chasqui (2 de 6)"
+              width="380" height="320" loading="lazy"></div>
+          <div class="gallery-card"><img src="assets/images/1a.jpg" alt="Fotografía del archivo de Chasqui (3 de 6)"
+              width="380" height="320" loading="lazy"></div>
+          <div class="gallery-card"><img src="assets/images/9.jpg" alt="Fotografía del archivo de Chasqui (4 de 6)"
+              width="380" height="320" loading="lazy"></div>
+          <div class="gallery-card"><img src="assets/images/21.jpg" alt="Fotografía del archivo de Chasqui (5 de 6)"
+              width="380" height="320" loading="lazy"></div>
+          <div class="gallery-card"><img src="assets/images/22.jpg" alt="Fotografía del archivo de Chasqui (6 de 6)"
+              width="380" height="320" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- EQUIPO -->
+    <section class="team-section section" aria-labelledby="team-title">
+      <div class="container team-section__container">
+
+        <h2 class="team-section__main-title" id="team-title" data-reveal>
+          La fuerza detrás de nuestra misión
+        </h2>
+
+        <!-- Equipo Chasqui -->
+        <div class="team-category">
+          <h3 class="pill-badge pill-badge--section" data-reveal>Equipo Chasqui</h3>
+
+          <ul class="team-block" data-stagger="zoom">
+            <li class="team-card">
+              <div class="team-card__photo">
+                <img src="assets/images/a1.png" alt="Adela Cruz Quispe" width="420" height="340" loading="lazy">
+              </div>
+              <div class="team-card__info">
+                <h4 class="team-card__name">Adela Cruz Quispe</h4>
+                <p class="team-card__role">Directora Ejecutiva</p>
+              </div>
+            </li>
+
+            <li class="team-card">
+              <div class="team-card__photo">
+                <img src="assets/images/a12.png" alt="Antonio Fredy Angulo Baltazar" width="420" height="340"
+                  loading="lazy">
+              </div>
+              <div class="team-card__info">
+                <h4 class="team-card__name">Antonio Fredy Angulo Baltazar</h4>
+                <p class="team-card__role">Área Administrativa</p>
+              </div>
+            </li>
+
+            <li class="team-card">
+              <div class="team-card__photo">
+                <img src="assets/images/a2.png" alt="Freddy Toledo Quispe" width="420" height="340" loading="lazy">
+              </div>
+              <div class="team-card__info">
+                <h4 class="team-card__name">Freddy Toledo Quispe</h4>
+                <p class="team-card__role">Coordinador Programa Desarrollo Local</p>
+              </div>
+            </li>
+
+            <li class="team-card">
+              <div class="team-card__photo">
+                <img src="assets/images/a11.png" alt="Santos Oscar Condori Choque" width="420" height="340"
+                  loading="lazy">
+              </div>
+              <div class="team-card__info">
+                <h4 class="team-card__name">Santos Oscar Condori Choque</h4>
+                <p class="team-card__role">Coordinador de Comunicación</p>
+              </div>
+            </li>
+
+            <li class="team-card">
+              <div class="team-card__photo">
+                <img src="assets/images/a3.png" alt="Jorge Cruz Quispe" width="420" height="340" loading="lazy">
+              </div>
+              <div class="team-card__info">
+                <h4 class="team-card__name">Jorge Cruz Quispe</h4>
+                <p class="team-card__role">Coordinador Programa Cultura de Paz</p>
+              </div>
+            </li>
+
+            <li class="team-card">
+              <div class="team-card__photo">
+                <img src="assets/images/a4.png" alt="Rodolfo Apoquinar Paja" width="420" height="340" loading="lazy">
+              </div>
+              <div class="team-card__info">
+                <h4 class="team-card__name">Rodolfo Apoquinar Paja</h4>
+                <p class="team-card__role">Coordinador Proyecto CPAN</p>
+              </div>
+            </li>
+
+            <li class="team-card">
+              <div class="team-card__photo">
+                <img src="assets/images/a5.png" alt="Coral Salazar Torrez" width="420" height="340" loading="lazy">
+              </div>
+              <div class="team-card__info">
+                <h4 class="team-card__name">Coral Salazar Torrez</h4>
+                <p class="team-card__role">Cooperante Institucional de Arte</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Personal técnico -->
+        <div class="team-category">
+          <h3 class="pill-badge pill-badge--section" data-reveal>Personal Técnico</h3>
+
+          <ul class="team-block" data-stagger="zoom">
+            <li class="team-card">
+              <div class="team-card__photo">
+                <img src="assets/images/a7.png" alt="Lidia Jhaneth Quispe Quelale" width="420" height="340"
+                  loading="lazy">
+              </div>
+              <div class="team-card__info">
+                <h4 class="team-card__name">Lidia Jhaneth Quispe Quelale</h4>
+                <p class="team-card__role">Técnico Programa Desarrollo Local</p>
+              </div>
+            </li>
+
+            <li class="team-card">
+              <div class="team-card__photo">
+                <img src="assets/images/a6.png" alt="Silvia Aduviri Choque" width="420" height="340" loading="lazy">
+              </div>
+              <div class="team-card__info">
+                <h4 class="team-card__name">Silvia Aduviri Choque</h4>
+                <p class="team-card__role">Técnico Programa Desarrollo Local</p>
+              </div>
+            </li>
+
+            <li class="team-card">
+              <div class="team-card__photo">
+                <img src="assets/images/a10.png" alt="Yamel Jacqueline Quispe Ibañez" width="420" height="340"
+                  loading="lazy">
+              </div>
+              <div class="team-card__info">
+                <h4 class="team-card__name">Yamel Jacqueline Quispe Ibañez</h4>
+                <p class="team-card__role">Técnico Proyecto CPAN</p>
+              </div>
+            </li>
+
+            <li class="team-card">
+              <div class="team-card__photo">
+                <img src="assets/images/a9.png" alt="Paola Gabriela Quispe Quispe" width="420" height="340"
+                  loading="lazy">
+              </div>
+              <div class="team-card__info">
+                <h4 class="team-card__name">Paola Gabriela Quispe Quispe</h4>
+                <p class="team-card__role">Técnico Proyecto CPAN</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <div class="pattern-divider" aria-hidden="true"></div>
+
+  <footer class="footer" id="contacto-footer" aria-label="Información institucional y de contacto">
+    <div class="footer__container" data-stagger>
+
+      <div class="footer__col footer__col--text">
+        <p class="footer__text">
+          Comunicación, cultura, educación, prevención y participación social al servicio de niñas, niños,
+          adolescentes, jóvenes y comunidades.
+        </p>
+      </div>
+
+      <div class="footer__col footer__col--figure">
+        <img src="assets/images/footer-figure.png" alt="Figura institucional de Chasqui" width="220" height="220"
+          loading="lazy">
+      </div>
+
+      <address class="footer__col footer__col--contact">
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text">
+            Zona Estrella de Belén, Calle 15 N°658, entre calle Ñ y Q, Ciudad de El Alto, Distrito 4.
+          </p>
+        </div>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text"><a href="tel:+59122883889">(591-2) 2883889</a></p>
+        </div>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text"><a href="tel:+59171996503">(591) 71996503</a></p>
+        </div>
+
+        <div class="footer__contact-item">
+          <span class="footer__icon-wrapper" aria-hidden="true">
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </span>
+          <p class="footer__contact-text"><a href="mailto:cccchasqui.bolivia@gmail.com">cccchasqui.bolivia@gmail.com</a>
+          </p>
+        </div>
+
+      </address>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
