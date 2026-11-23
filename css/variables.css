@@ -63,14 +63,14 @@
        su tamaño de fuente (ver styles.css) y el contenedor crece con él. */
     --container-max-width: 90rem;
     --page-gutter: clamp(1rem, 2.5vw, 2.5rem);
-    --header-height: clamp(112px, 9vw, 160px);
+    --header-height: clamp(112px, 9vw, 168px);
 
     /* Franja decorativa de formas (entre el menú y el hero, y sobre el footer) */
     --pattern-height: clamp(1.25rem, 0.9rem + 0.7vw, 2.25rem);
     --divider-height: calc(var(--pattern-height) + 0.5rem);
 
     /* Sombras */
-    --shadow-logo: 0 4px 8px rgb(0 0 0 / 22%);
+    --shadow-logo: 0 4px 6px rgb(0 0 0 / 45%);
     --shadow-navigation: 0 7px 6px rgb(0 0 0 / 25%);
     --shadow-card: 0 4px 12px rgb(37 70 151 / 12%);
     --shadow-card-hover: 0 12px 26px rgb(37 70 151 / 25%);
@@ -90,3 +90,6 @@
         --header-height: 7rem;
     }
 }
+
+
+-------------------------------------------------------------------------------------
