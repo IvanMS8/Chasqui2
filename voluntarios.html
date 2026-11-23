@@ -36,7 +36,7 @@
 
                 <!-- Banner / Imagen o Vídeo Principal -->
                 <div class="volunteers-hero__banner">
-                    <img src="assets/images/voluntarios-chasqui1.png" alt="Grupo de Voluntarios Centro Chasqui">
+                    <img src="imagenes2/voluntarios-chasqui1.png" alt="Grupo de Voluntarios Centro Chasqui">
                 </div>
 
                 <!-- Descripción del Voluntariado -->
@@ -48,50 +48,24 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 2: FORMULARIO PARTICIPA EN LA MISIÓN -->
-        <section class="volunteers-join">
-            <div class="volunteers-join__container">
-                
-                <!-- Badge Encabezado -->
-                <div class="volunteers-join__badge">
-                    <h2>PARTICIPA EN LA MISIÓN DE CHASQUI</h2>
-                </div>
+        <!-- SECCIÓN 2: HISTORIA DE NUESTROS VOLUNTARIOS -->
+        <section class="volunteers-stories" aria-labelledby="volunteers-stories-title">
+            <div class="volunteers-stories__container">
+                <h2 class="volunteers-stories__heading" id="volunteers-stories-title">
+                    Cada experiencia también puede<br class="desktop-break"> convertirse en una historia
+                </h2>
 
-                <div class="volunteers-join__grid">
-                    <!-- Columna Izquierda: Información -->
-                    <div class="volunteers-join__info">
-                        <h2 class="volunteers-join__title">Escríbenos y sé parte de Chasqui</h2>
-                        <p class="volunteers-join__text">
-                            Cuéntanos qué te interesa: talleres, voluntariado o alianzas. Te responderemos lo antes posible.
-                        </p>
-                    </div>
+                <a class="volunteers-stories__image-link" href="voluntarios-articulo.html"
+                   aria-label="Leer la historia de nuestros voluntarios">
+                    <img src="assets/images/thula.png"
+                         alt="Voluntaria de Chasqui compartiendo una experiencia con niñas y niños"
+                         loading="lazy">
+                </a>
 
-                    <!-- Columna Derecha: Formulario -->
-                    <form class="volunteers-form" action="#" method="POST">
-                        <div class="form-group">
-                            <label for="fullName">Nombre completo</label>
-                            <input type="text" id="fullName" name="fullName" placeholder="Escribe tu nombre" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" name="email" placeholder="Escribe tu correo" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="whatsapp">Numero de whatsapp</label>
-                            <input type="tel" id="whatsapp" name="whatsapp" placeholder="Escribe tu correo">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
-                        </div>
-
-                        <button type="submit" class="volunteers-form__submit">Enviar mensaje</button>
-                    </form>
-                </div>
-
+                <a class="volunteers-stories__button" href="voluntarios-articulo.html">
+                    <span class="volunteers-stories__button-title">¿Qué dicen nuestros voluntarios?</span>
+                    <span class="volunteers-stories__button-action">Ver más</span>
+                </a>
             </div>
         </section>
     </main>
