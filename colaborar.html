@@ -39,8 +39,8 @@
           alt="Centro de Comunicación Cultural Chasqui" width="350" height="110">
       </a>
 
-      <button class="menu-toggle" type="button" aria-label="Abrir menú de navegación"
-        aria-controls="primary-navigation" aria-expanded="false">
+      <button class="menu-toggle" type="button" aria-label="Abrir menú de navegación" aria-controls="primary-navigation"
+        aria-expanded="false">
         <span class="menu-toggle__line"></span>
         <span class="menu-toggle__line"></span>
         <span class="menu-toggle__line"></span>
@@ -84,8 +84,13 @@
                </video>
                Para YouTube usa un <iframe> con title="..." y loading="lazy". -->
           <figure class="project__media" data-reveal="right">
-            <img src="assets/images/colaborar-proyecto-1.jpg"
-              alt="Proyecto Mujeres al volante de Chasqui" width="800" height="500" loading="lazy">
+            <div class="project__video-wrapper">
+              <iframe src="https://www.youtube.com/embed/DypABEnhD9A?si=3-pSVLuGc_qmFYzH"
+                title="Proyecto Mujeres al volante de Chasqui" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
+              </iframe>
+            </div>
           </figure>
         </div>
 
@@ -109,8 +114,13 @@
           </div>
 
           <figure class="project__media" data-reveal="right">
-            <img src="assets/images/colaborar-proyecto-2.jpg"
-              alt="Proyecto Juntos transformamos realidades de Chasqui" width="800" height="500" loading="lazy">
+            <div class="project__video-wrapper">
+              <iframe src="https://www.youtube.com/embed/AByUnW9cvmE?si=mMHEwuu9Z-4qN0XT"
+                title="Video del proyecto Chasqui" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
+              </iframe>
+            </div>
           </figure>
         </div>
 
@@ -139,8 +149,8 @@
         </p>
 
         <figure class="qr-card" data-reveal="zoom">
-          <img class="qr-card__image" src="assets/images/qr-colaborar.png"
-            alt="Código QR para colaborar con Chasqui" width="400" height="400" loading="lazy">
+          <img class="qr-card__image" src="assets/images/qr.jpg" alt="Código QR para colaborar con Chasqui"
+            width="400" height="400" loading="lazy">
           <figcaption class="qr-card__caption">Escanea el código para colaborar</figcaption>
         </figure>
 
@@ -262,7 +272,8 @@
                 d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
             </svg>
           </span>
-          <p class="footer__contact-text"><a href="mailto:cccchasqui.bolivia@gmail.com">cccchasqui.bolivia@gmail.com</a></p>
+          <p class="footer__contact-text"><a href="mailto:cccchasqui.bolivia@gmail.com">cccchasqui.bolivia@gmail.com</a>
+          </p>
         </div>
 
       </address>
