@@ -1017,3 +1017,20 @@ button {
         text-align: left;
     }
 }
+
+.project__video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: inherit; /* Hereda el border-radius de .project__media si lo tiene */
+}
+
+.project__video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
