@@ -59,6 +59,12 @@
         <a class="site-header__link" href="noticias.html">Noticias</a>
       </nav>
 
+      <!-- Botón Dona: lleva al código QR de la página Colaborar -->
+      <a class="site-header__donate" href="colaborar.html#qr">
+        <img src="assets/images/donar.png" alt="Transforma realidades junto a Chasqui: dona" width="400"
+          height="311">
+      </a>
+
     </div>
   </header>
 
@@ -92,16 +98,16 @@
 
         <div class="hero__logos" role="group" aria-label="Programas institucionales">
 
-          <a class="hero__logo hero__logo--development" href="#programas" aria-label="Conoce Desarrollo Local">
+          <a class="hero__logo" data-slot="0" href="#programas" aria-label="Conoce Desarrollo Local">
             <img src="assets/images/logo-desarrollo-local.png" alt="Chasqui Desarrollo Local" width="300"
               height="300" decoding="async">
           </a>
 
-          <a class="hero__logo hero__logo--cpan" href="#programas" aria-label="Conoce CPAN">
+          <a class="hero__logo" data-slot="1" href="#programas" aria-label="Conoce CPAN">
             <img src="assets/images/logo-cpan.png" alt="CPAN" width="200" height="200" decoding="async">
           </a>
 
-          <a class="hero__logo hero__logo--cultural" href="#programas" aria-label="Conoce el programa cultural">
+          <a class="hero__logo" data-slot="2" href="#programas" aria-label="Conoce el programa cultural">
             <img src="assets/images/logo-cultural.png" alt="Ilustración del programa cultural de Chasqui"
               width="200" height="200" decoding="async">
           </a>
@@ -205,12 +211,13 @@
                   width="800" height="500" loading="lazy">
               </div>
               <div class="workshop-card__body">
-                <h3 class="workshop-card__title">Taller De Cocina Creativa</h3>
+                <h3 class="workshop-card__title"><a class="workshop-card__link" href="#contacto" data-interest="Taller De Cocina Creativa">Taller De Cocina Creativa</a></h3>
                 <p class="workshop-card__location-label">Lugar: Chasqui</p>
                 <p class="workshop-card__address">
                   Zona Estrella de Belén, Calle 15 N°658,<br>
                   entre calle Ñ y Q, Ciudad de El Alto, Distrito 4
                 </p>
+                <span class="workshop-card__cta" aria-hidden="true">Quiero participar</span>
               </div>
             </article>
 
@@ -220,27 +227,29 @@
                   width="800" height="500" loading="lazy">
               </div>
               <div class="workshop-card__body">
-                <h3 class="workshop-card__title">Taller De Comunicación</h3>
+                <h3 class="workshop-card__title"><a class="workshop-card__link" href="#contacto" data-interest="Taller De Comunicación">Taller De Comunicación</a></h3>
                 <p class="workshop-card__location-label">Lugar: Chasqui</p>
                 <p class="workshop-card__address">
                   Zona Estrella de Belén, Calle 15 N°658,<br>
                   entre calle Ñ y Q, Ciudad de El Alto, Distrito 4
                 </p>
+                <span class="workshop-card__cta" aria-hidden="true">Quiero participar</span>
               </div>
             </article>
 
             <article class="workshop-card">
               <div class="workshop-card__media">
-                <img src="assets/images/taller-teatro.jpg" alt="Participantes del taller de teatro" width="800"
+                <img src="assets/images/teatro.jpg" alt="Participantes del taller de teatro" width="800"
                   height="500" loading="lazy">
               </div>
               <div class="workshop-card__body">
-                <h3 class="workshop-card__title">Taller De Teatro</h3>
+                <h3 class="workshop-card__title"><a class="workshop-card__link" href="#contacto" data-interest="Taller De Teatro">Taller De Teatro</a></h3>
                 <p class="workshop-card__location-label">Lugar: Chasqui</p>
                 <p class="workshop-card__address">
                   Zona Estrella de Belén, Calle 15 N°658,<br>
                   entre calle Ñ y Q, Ciudad de El Alto, Distrito 4
                 </p>
+                <span class="workshop-card__cta" aria-hidden="true">Quiero participar</span>
               </div>
             </article>
 
@@ -250,27 +259,29 @@
                   width="800" height="500" loading="lazy">
               </div>
               <div class="workshop-card__body">
-                <h3 class="workshop-card__title">Taller De Danza</h3>
+                <h3 class="workshop-card__title"><a class="workshop-card__link" href="#contacto" data-interest="Taller De Danza">Taller De Danza</a></h3>
                 <p class="workshop-card__location-label">Lugar: Chasqui</p>
                 <p class="workshop-card__address">
                   Zona Estrella de Belén, Calle 15 N°658,<br>
                   entre calle Ñ y Q, Ciudad de El Alto, Distrito 4
                 </p>
+                <span class="workshop-card__cta" aria-hidden="true">Quiero participar</span>
               </div>
             </article>
 
             <article class="workshop-card">
               <div class="workshop-card__media">
-                <img src="assets/images/taller-voluntarios.jpg" alt="Voluntarios de Chasqui" width="800"
+                <img src="assets/images/voluntarios-chasqui1.png" alt="Voluntarios de Chasqui" width="800"
                   height="500" loading="lazy">
               </div>
               <div class="workshop-card__body">
-                <h3 class="workshop-card__title">Voluntarios Chasqui</h3>
+                <h3 class="workshop-card__title"><a class="workshop-card__link" href="voluntarios.html">Voluntarios Chasqui</a></h3>
                 <p class="workshop-card__location-label">Lugar: Chasqui</p>
                 <p class="workshop-card__address">
                   Zona Estrella de Belén, Calle 15 N°658,<br>
                   entre calle Ñ y Q, Ciudad de El Alto, Distrito 4
                 </p>
+                <span class="workshop-card__cta" aria-hidden="true">Conocer el voluntariado</span>
               </div>
             </article>
 
@@ -357,10 +368,10 @@
             talleres, voluntariado o alianzas. Te responderemos lo antes posible.
           </p>
 
-          <div class="contact__card">
-            <img src="assets/images/voluntarios-chasqui.png" alt="Voluntarios Chasqui" width="380" height="100"
-              loading="lazy">
-          </div>
+          <a class="contact__card" href="voluntarios.html" title="Conoce a los voluntarios de Chasqui">
+            <img src="assets/images/voluntarios-chasqui.png" alt="Voluntarios Chasqui: conoce el voluntariado"
+              width="380" height="100" loading="lazy">
+          </a>
         </div>
 
         <!-- Para enviar mensajes reales, coloca en "action" la URL de un servicio como Formspree o Web3Forms -->
