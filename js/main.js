@@ -175,6 +175,48 @@ function initHeroSlider() {
 }
 
 /* =========================================
+   0b. Logos del hero: giran como las agujas de un reloj
+   Cada logo pasa a la siguiente posición (data-slot) en el sentido horario.
+   El CSS anima el desplazamiento.
+   ========================================= */
+
+function initHeroLogos() {
+    const cluster = document.querySelector(".hero__logos");
+    const logos = cluster ? [...cluster.querySelectorAll(".hero__logo[data-slot]")] : [];
+
+    if (logos.length < 3 || prefersReducedMotion.matches) return;
+
+    const INTERVAL = 4500;
+
+    // Izquierda (0) → arriba a la derecha (1) → abajo a la derecha (2) → izquierda (0)
+    const clockwise = { 0: 1, 1: 2, 2: 0 };
+    const pause = { hover: false, offscreen: false, hidden: false };
+
+    cluster.addEventListener("mouseenter", () => { pause.hover = true; });
+    cluster.addEventListener("mouseleave", () => { pause.hover = false; });
+    cluster.addEventListener("focusin", () => { pause.hover = true; });
+    cluster.addEventListener("focusout", () => { pause.hover = false; });
+
+    if (supportsObserver) {
+        new IntersectionObserver(([entry]) => {
+            pause.offscreen = !entry.isIntersecting;
+        }, { threshold: 0.2 }).observe(cluster);
+    }
+
+    document.addEventListener("visibilitychange", () => {
+        pause.hidden = document.hidden;
+    });
+
+    setInterval(() => {
+        if (Object.values(pause).some(Boolean)) return;
+
+        logos.forEach((logo) => {
+            logo.dataset.slot = clockwise[Number(logo.dataset.slot)];
+        });
+    }, INTERVAL);
+}
+
+/* =========================================
    1. Navegación responsive
    ========================================= */
 
@@ -316,10 +358,11 @@ function initWorkshopsCarousel() {
     const originals = [...carousel.children];
 
     // Copias solo visuales: se ocultan a lectores de pantalla y al teclado
+    // Las copias siguen siendo clicables (por eso no llevan "inert"), pero se sacan del orden del teclado
     const clones = originals.map((card) => {
         const clone = card.cloneNode(true);
         clone.setAttribute("aria-hidden", "true");
-        clone.setAttribute("inert", "");
+        clone.querySelectorAll("a").forEach((link) => link.setAttribute("tabindex", "-1"));
         return clone;
     });
     carousel.append(...clones);
@@ -395,6 +438,24 @@ function initWorkshopsCarousel() {
     requestAnimationFrame((now) => {
         lastTime = now;
         frame(now);
+    });
+}
+
+/* =========================================
+   4b. Talleres: al elegir uno, el mensaje del formulario queda con ese taller
+   (solo si el mensaje está vacío)
+   ========================================= */
+
+function initWorkshopLinks() {
+    const carousel = document.querySelector("#workshops-carousel");
+    const message = document.querySelector("#mensaje");
+    if (!carousel || !message) return;
+
+    carousel.addEventListener("click", (event) => {
+        const link = event.target.closest("a[data-interest]");
+        if (!link || message.value.trim()) return;
+
+        message.value = `Hola, me interesa participar en: ${link.dataset.interest}.`;
     });
 }
 
@@ -601,10 +662,12 @@ function initContactForm() {
    ========================================= */
 
 initHeroSlider();
+initHeroLogos();
 initNavigation();
 initScrollEffects();
 initReveal();
 initWorkshopsCarousel();
+initWorkshopLinks();
 initMarquees();
 initAccordions();
 initCounters();
