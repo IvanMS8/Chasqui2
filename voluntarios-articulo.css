@@ -1,0 +1,255 @@
+/* Página de artículo: Voluntarios Chasqui */
+.story-page {
+    background: #f8fafc;
+    color: #14233d;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.story-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 1.2rem 1.5rem 5.5rem;
+    color: #fff;
+    background: #08294d;
+}
+
+.story-hero__pattern {
+    position: absolute;
+    inset: 0;
+    opacity: .22;
+    background-image:
+        repeating-linear-gradient(45deg, transparent 0 18px, rgb(255 255 255 / 10%) 19px 21px, transparent 22px 38px),
+        repeating-linear-gradient(-45deg, transparent 0 18px, rgb(255 255 255 / 8%) 19px 21px, transparent 22px 38px);
+    background-size: 54px 54px;
+    pointer-events: none;
+}
+
+.story-hero__container {
+    position: relative;
+    width: min(100%, 820px);
+    margin: 0 auto;
+}
+
+.story-breadcrumb {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: #dce8f7;
+    font: 700 .78rem/1.4 Nunito, sans-serif;
+}
+
+.story-category {
+    display: table;
+    margin-bottom: .7rem;
+    padding: .2rem .65rem;
+    border-radius: 999px;
+    background: #fff;
+    color: #0b2b50;
+    font: 900 .62rem Nunito, sans-serif;
+    letter-spacing: .05em;
+}
+
+.story-hero h1 {
+    margin: 0 0 1rem;
+    color: #fff;
+    font: 900 clamp(2.7rem, 7vw, 5.3rem)/.91 Nunito, sans-serif;
+    letter-spacing: -.055em;
+}
+
+.story-lead {
+    max-width: 690px;
+    margin: 1.2rem 0 2rem;
+    color: #edf4fb;
+    font: 500 clamp(.95rem, 1.5vw, 1.1rem)/1.55 Nunito, sans-serif;
+}
+
+.story-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    font-family: Nunito, sans-serif;
+}
+
+.story-author {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    margin-right: auto;
+}
+
+.story-author__avatar {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border-radius: 50%;
+    background: #f2c65d;
+    color: #08294d;
+    font-weight: 900;
+}
+
+.story-author span:last-child,
+.story-meta__item {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+}
+
+.story-meta small {
+    color: #c4d2e2;
+    font-size: .58rem;
+    font-weight: 700;
+    letter-spacing: .06em;
+}
+
+.story-meta strong {
+    color: #fff;
+    font-size: .75rem;
+}
+
+.story-main {
+    position: relative;
+    padding: 0 1.25rem 4rem;
+    background: #fff;
+}
+
+.story-cover {
+    position: relative;
+    width: min(100%, 900px);
+    margin: -2.8rem auto 3.5rem;
+    padding: .5rem;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 12px 35px rgb(8 41 77 / 16%);
+}
+
+.story-cover img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.5 / 1;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.story-cover figcaption {
+    padding: .45rem 0 .1rem;
+    color: #8491a4;
+    text-align: center;
+    font: .65rem Nunito, sans-serif;
+}
+
+.story-layout {
+    display: grid;
+    grid-template-columns: minmax(150px, 220px) minmax(0, 650px);
+    justify-content: center;
+    gap: clamp(2rem, 6vw, 5rem);
+    width: min(100%, 950px);
+    margin: 0 auto;
+    background-image: repeating-linear-gradient(0deg, transparent 0 175px, #f7f7f5 176px 179px);
+}
+
+.story-sidebar {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+    padding-top: .6rem;
+    font-family: Nunito, sans-serif;
+}
+
+.story-sidebar span {
+    color: #28539a;
+    font-size: .65rem;
+    font-weight: 900;
+}
+
+.story-sidebar h2 {
+    margin: .5rem 0 .8rem;
+    color: #172c4a;
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.story-sidebar p {
+    color: #8793a4;
+    font-size: .76rem;
+    line-height: 1.5;
+}
+
+.story-content {
+    color: #28364a;
+    font-size: 1rem;
+    line-height: 1.85;
+}
+
+.story-content p {
+    margin: 0 0 1.2rem;
+}
+
+.story-content .story-opening::first-letter {
+    float: left;
+    padding: .08rem .4rem 0 0;
+    color: #0a2c52;
+    font: 900 3.5rem/.85 Georgia, serif;
+}
+
+.story-content h2 {
+    margin: 2.2rem 0 .8rem;
+    color: #172c4a;
+    font: 700 1.15rem/1.35 Georgia, serif;
+}
+
+.story-content blockquote {
+    margin: 1.2rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid #e52421;
+    color: #34445a;
+    font-style: italic;
+}
+
+.story-footer {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background: #f1f5f9;
+    font: 800 .95rem Nunito, sans-serif;
+}
+
+.story-footer a {
+    color: #254697;
+}
+
+.story-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .story-hero {
+        padding-bottom: 4.5rem;
+    }
+
+    .story-meta {
+        gap: 1rem 1.5rem;
+    }
+
+    .story-author {
+        flex-basis: 100%;
+    }
+
+    .story-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .story-sidebar {
+        position: static;
+        max-width: 360px;
+    }
+
+    .story-content {
+        font-size: .98rem;
+    }
+
+    .story-cover img {
+        aspect-ratio: 1.15 / 1;
+    }
+}
